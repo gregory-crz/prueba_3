@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+   /* let i = 0;
+    while(i <= 100){
+      console.log("contando: "+ i)
+      i++;
+    }*/
+    /*let i = 0;
+    while(i <= 1000){
+      console.log("Ahora va el: "+ i)
+      i += 17;// suma 17 en 17 hasta 1000
+      // i = i + 17;
+    }*/
+
+    /*let i = 0;
+    while(i >= -10000){
+      console.log("Ahora va el: "+ i)
+      i -= 143;
+    }*/
+    /*let i = 0;
+    while(i <= 10000){
+      console.log("Ahora va el: "+ i)
+      i += 150;
+    }*/
+    /*let i = 10030;
+    while(i <= 10060){
+      console.log("Ahora va el: "+ i)
+      i ++;
+    }*/
+
+    //loop infinito
+    while (true) {
+      let cantidad = prompt("Elija un número\n o 0 para salir")
+      if(cantidad == 0){
+        alert("Gracias por jugar")
+        break
+      }  
+      cantidad = parseInt(cantidad)
+      alert("Yo gano con el "+ (cantidad + 1))
+    }
+    
+    
+   //Cómo hacer un programa que cuente los minutos y los segundos?
+
+    let minutos = 5;
+    let minutero= 0;
+    let segundos = 60;
+    let segundero = 0;
+
+    while (minutero <= minutos) {
+      
+      
+      while (segundero < segundos ) {
+        
+        if (minutero == 1 && segundero == 1) {
+        console.log(minutero + " minuto " + segundero + " segundo");
+      }else if(minutero == 1 && segundero > 1)  {
+        console.log(minutero + " minuto " + segundero + " segundos");
+      }else if (segundero == 1) {
+        console.log(minutero + " minutos " + segundero + " segundo");      
+      }
+      else{
+        console.log(minutero + " minutos " + segundero + " segundos")
+      }
+        segundero++;//condicion de corte o medida de seguridad del loop anidado..
+      }
+      segundero = 1;//Restablece el valor de la variable para que vuelva a ser true..
+
+      minutero++;//Es la condicion de corte o medida del loop madre (minutero <= minutos)..
+
+ 
+    }
+
+  </script>
+</body>
+</html>
